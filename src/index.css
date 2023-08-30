@@ -20,3 +20,11 @@ nav > ul > li {
   margin: 1em;
 }
 
+.Header {
+  background-color: aquamarine;
+  padding: 1em;
+}
+
+.DateRefresh {
+  padding: 1em;
+}

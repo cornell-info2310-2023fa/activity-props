@@ -1,8 +1,8 @@
-export default function Header() {
+export default function Header({title = "Title", children}) {
   return (
-    <header>
-      <h1>Dynamic Website</h1>
-      <p>This is a <strong>client-side rendered</strong> website.</p>
+    <header className="centerText, Header">
+      <h1>{title}</h1>
+      {children}
     </header>
   );
 }

@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function DateRefresh() {
+export default function DateRefresh({actionText = "Update Date", color = "white"}) {
   const [date, setDate] = React.useState(new Date().toString());
 
   function updateDate() {
@@ -8,9 +8,9 @@ export default function DateRefresh() {
   }
 
   return (
-    <>
+    <div className="DateRefresh" style={{backgroundColor: color}}>
       <p>{date}</p>
-      <button onClick={updateDate}>Update Date</button>
-    </>
+      <button onClick={updateDate}>{actionText}</button>
+    </div>
   );
 }

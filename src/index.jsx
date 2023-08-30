@@ -7,9 +7,12 @@ import DateRefresh from './DateRefresh';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
-    <DateRefresh />
-    <DateRefresh />
-    <DateRefresh />
+    <Header title="Dynamic Website">
+      <p>This is a <strong>client-side rendered</strong> website.</p>
+    </Header>
+
+    <DateRefresh color="deepskyblue" />
+    <DateRefresh color="mediumorchid" actionText="Refresh Date"/>
+    <DateRefresh color="lightsalmon" actionText="Change Date"/>
   </React.StrictMode>
 );
